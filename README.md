@@ -1,4 +1,4 @@
-# javadbf
+## javadbf
 公司老项目中的一个jar包,用来处理dbf文件,但是没有考虑到中文的情况<br>
 **原maven是：**
 ````javascript
@@ -9,10 +9,10 @@
     <version>0.4.0</version>
 </dependency>
 ````
-这个是最新版,也是唯一一个版本。。。
-线上发现问题,导出来的dbf文件有乱码的问题,但是只是部分,然后debug开始。。。
-**解决方案：**
-Utils类<br>
+这个是最新版,也是唯一一个版本。。。<br>
+线上发现问题,导出来的dbf文件有乱码的问题,但是只是部分,然后debug开始。。。<br>
+**解决方案：**<br>
+Utils类
 ```java
     public static byte[] textPadding(String text, String characterSetName, int length, int alignment,
                                      byte paddingByte) throws UnsupportedEncodingException {
