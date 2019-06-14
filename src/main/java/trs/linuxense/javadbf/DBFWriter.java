@@ -155,7 +155,7 @@ public class DBFWriter extends DBFBase {
     /**
      * Writes the set data to the OutputStream.
      */
-    private void write(OutputStream out)
+    public void write(OutputStream out)
             throws DBFException {
         try {
             if (this.raf == null) {
