@@ -152,7 +152,7 @@ public class DBFField {
      * @param value of the field as String.
      * @since 0.3.3.1
      */
-    private void setName(String value) {
+    public void setName(String value) {
         if (value == null) {
             throw new IllegalArgumentException("Field name cannot be null");
         }
